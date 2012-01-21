@@ -1,5 +1,2 @@
-require "cdto/version"
-
-module Cdto
-  # Your code goes here...
-end
+require 'cdto/version'
+require 'cdto/bundle'

@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Daniel Nordstrom"]
   s.email       = ["d@nintera.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{The cd command on roids.}
+  s.description = %q{Tool for quickly changing directory.}
 
   s.rubyforge_project = "cdto"
 

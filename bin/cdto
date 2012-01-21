@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby -w
+
+args = ARGV[0].split(':')
+klass = args.shift
+
+begin
+  Cdto.const_get(klass).new(args.join(':'))
+rescue
+  puts "Ain't gonna happen."
+end
