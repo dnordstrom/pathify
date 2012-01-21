@@ -1,12 +1,13 @@
 #!/usr/bin/env ruby -w
 
+require 'cdto'
+
 exit unless ARGV[0]
 
-args = ARGV[0].split(':')
-klass = args.shift
-
 begin
-  Cdto.const_get(klass).new(args.join(':'))
+  args = ARGV[0].split(':')
+  klass = args.shift
+  Cdto.const_get(klass.capitalize).new(args.join(':'))
 rescue
   puts "Ain't gonna happen."
 end
