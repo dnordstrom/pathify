@@ -1,7 +1,7 @@
 module Pathify
-  class Bundle
+  class Bundle < Finder
     def initialize(cmd)
-      `bundle show #{cmd}`
+      @path = `bundle show #{cmd}`
     end
   end
 end
