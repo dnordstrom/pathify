@@ -1,8 +1,7 @@
 module Pathify
   class Bundle
     def initialize(cmd)
-      path = `bundle show #{cmd}`
-      `cd #{path}`
+      `bundle show #{cmd}`
     end
   end
 end

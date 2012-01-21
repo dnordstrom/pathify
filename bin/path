@@ -1,15 +1,24 @@
 #!/usr/bin/env ruby -w
 
-require 'cdto'
-
-exit unless ARGV[0]
+require 'pathify'
 
 begin
+  raise RuntimeError unless ARGV[0]
+
   args = ARGV[0].split(':')
   klass = args.shift
-  Cdto.const_get(klass.capitalize).new(args.join(':'))
-rescue
-  puts "Ain't gonna happen."
-end
+  
+  path = Cdto.const_get(klass.capitalize).new(args.join(':'))
+  header = "Looking for #{ARGV[0]}"
+  separator = ""
 
-`cd ~/Sites`
+  header.length.times do
+    separator += '-'
+  end
+
+  puts header
+  puts separator
+  puts path
+rescue
+  puts "No path found."
+end
