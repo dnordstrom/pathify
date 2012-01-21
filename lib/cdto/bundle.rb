@@ -1,7 +1,8 @@
 module Cdto
   class Bundle
     def initialize(cmd)
-      puts `bundle show #{cmd}`
+      path = `bundle show #{cmd}`
+      `cd #{path}`
     end
   end
 end
