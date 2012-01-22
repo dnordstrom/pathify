@@ -3,7 +3,7 @@ module Pathify
     def initialize(cmd)
       output = `gem which #{cmd}`
       @path = File.expand_path(
-        File.join(File.basename(output), '..')
+        File.join(output, '..')
       ) if output =~ /^\//
     end
   end
