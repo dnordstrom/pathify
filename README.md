@@ -5,6 +5,8 @@ to things like installed gems. At this time it simply acts as a
 shortcut to `bundle show` and `gem which` so please feel free to
 contribute or suggest features you would find useful.
 
+## Usage
+
 ### Find gem
 
      > path gem:migraine
