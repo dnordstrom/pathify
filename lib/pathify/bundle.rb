@@ -1,8 +1,8 @@
 module Pathify
-  class Bundle < Finders
+  class Bundle < Finder
     def initialize(cmd)
       @path = `bundle show #{cmd}`
-      raise RuntimeError unless File.exists?(@path)
+      raise RuntimeError if File.exists?(@path)
     end
   end
 end
