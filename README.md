@@ -28,10 +28,10 @@ contribute or suggest features you would find useful.
 Any filesystem related path finders/shortcuts are welcome. See
 `lib/pathify` for examples. It's really very simple.
 
-Add a class with a constructor that takes a string argument. In the
-constructor, do what you need to do to find the path and store it
-in the `@path` instance variable. That's it, it's now ready to be
-used by the command line tool.
+Add a class that inherits from `Finder`, with a constructor that
+takes a string argument. In the constructor, do what you need to
+do to find the path and store it in the `@path` instance variable.
+That's it, it's now ready to be used by the command line tool.
 
 E.g. the command `path bundle:migraine` will create an object of
 class `Bundle` and pass `"bundler"` to the constructor, which
