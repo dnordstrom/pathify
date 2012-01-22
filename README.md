@@ -38,4 +38,4 @@ That's it, it's now ready to be used by the command line tool.
 E.g. the command `path bundle:migraine` will create an object of
 class `Bundle` and pass `"bundler"` to the constructor, which
 looks for the path and sets the `@path` variable. The object is
-outputted to the user (`to_s` by default outputs `@path`.)
+outputted to the user (`to_s` by default outputs `@path`).
