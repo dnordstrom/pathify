@@ -3,7 +3,7 @@ module Pathify
     attr_accessor :path
 
     def to_s
-      @path
+      @path || 'No path found.'
     end
   end
 end
