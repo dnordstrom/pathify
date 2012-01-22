@@ -1,7 +1,7 @@
 # Pathify
 
 Pathify is a tiny Ruby gem that helps you find filesystem paths
-to things like installed gems. At the moment it simply acts as a
+to things like installed gems. At this time it simply acts as a
 shortcut to `bundle show` and `gem which` so please feel free to
 contribute or suggest features you would find useful.
 
